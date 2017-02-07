@@ -31,7 +31,7 @@ account = dbx.users_get_current_account()
 print(account)
 
 #dir = os.chdir(path)
-print(os.listdir(path))
+#print(os.chdir(path))
 
 # list files and folders in the root directory
 for entry in dbx.files_list_folder('').entries:
