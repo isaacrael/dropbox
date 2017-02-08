@@ -17,7 +17,8 @@ import dropbox
 import os
 import subprocess
 path = "/home/isaac/Documents"
-
+dropbox_path_1 = '/cavs_vs_warriors/game_5/story.txt'
+dropbox_path_2 = '/cavs_vs_warriors/game_5/sushiplate.jpg'
 
 
 
@@ -45,8 +46,8 @@ data = str.encode(line)
 f.close()
 
 mode = (dropbox.files.WriteMode.overwrite)
-dbx.files_upload(data,'/cavs_vs_warriors/game_5/story.txt', mode)
-print(dbx.files_get_metadata('/cavs_vs_warriors/game_5/story.txt').server_modified)
+dbx.files_upload(data,dropbox_path_1, mode)
+print(dbx.files_get_metadata(dropbox_path_1).server_modified)
 
 
 
@@ -54,5 +55,5 @@ print(dbx.files_get_metadata('/cavs_vs_warriors/game_5/story.txt').server_modifi
 f = open('sushiplate.jpg', 'rb')
 data = f.read()
 mode = (dropbox.files.WriteMode.overwrite)
-dbx.files_upload(data,'/cavs_vs_warriors/game_5/sushiplate.jpg', mode)
-print(dbx.files_get_metadata('/cavs_vs_warriors/game_5/sushiplate.jpg').server_modified)
+dbx.files_upload(data,dropbox_path_2, mode)
+print(dbx.files_get_metadata(dropbox_path_2).server_modified)
