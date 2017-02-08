@@ -15,7 +15,6 @@ p1B5gzbofYMAAAAAAAAFSatK1PSjUQFKQwAUYPmlBjxVpMIYxmBPwZx91Keu5HMa
 
 import dropbox
 import os
-import subprocess
 path = "/home/isaac/Documents"
 dropbox_path_1 = '/cavs_vs_warriors/game_5/story.txt'
 dropbox_path_2 = '/cavs_vs_warriors/game_5/sushiplate.jpg'
