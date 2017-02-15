@@ -18,6 +18,7 @@ import time
 
 
 def unix_upload_to_dropbox():
+    "creates an archive.tar file and uploads to dropbox_path"
     path = "/home/isaac/Documents"
     dropbox_path = '/unix_systems/ubuntu_desktop/home/isaac/documents/archive.tar'
     command ="tar -cf archive.tar *"
